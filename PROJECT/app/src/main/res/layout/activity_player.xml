@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+
+    <!-- This is the progress bar of the song itself, it will display the point where the song
+    is playing, and it can be adjusted by the user -->
+
+    <TextView
+        android:id="@+id/audioTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/audioSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/audioTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="10dp"
+        android:textSize="15dp"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="@color/black"/>
+
+
+    <SeekBar
+        android:id="@+id/songBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/audioSubtitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:elevation="10dp" />
+
+    <!-- These TextViews display the time that the song has actually been played and the
+     time remaining -->
+
+    <TextView
+        android:id="@+id/timePlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/songBar"
+        app:layout_constraintTop_toBottomOf="@+id/songBar"
+        android:elevation="10dp"
+        android:text="0:00"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/timeRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/songBar"
+        app:layout_constraintTop_toBottomOf="@+id/songBar"
+        android:elevation="10dp"
+        android:text="-1:30"
+        android:textColor="@color/black"/>
+
+    <!-- This is the play button, which I don't think that needs an explaining -->
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/play"
+        android:backgroundTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePlayed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="10dp"/>
+
+    <!-- These items are for the volume control, which is displayed entirely on
+    the screen for the user's convenience -->
+
+    <!--
+    <ImageView
+        android:id="@+id/speakerOn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sound2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playBtn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <SeekBar
+        android:id="@+id/volumeBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/speakerOn"
+        app:layout_constraintTop_toTopOf="@id/speakerOn"
+        app:layout_constraintBottom_toBottomOf="@+id/speakerOn"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="50dp"/>
+        -->
+
+    <!-- This is the image that goes with the song, it can eventually be changed, but just in case -->
+
+    <ImageView
+        android:id="@+id/songImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleY="1.35"
+        android:scaleX="1.35"
+        android:src="@drawable/sky10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

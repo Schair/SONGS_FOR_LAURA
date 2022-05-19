@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Canciones QMHGCEOC</string>
+
+    <string-array name="asmr_titles">
+        <item>no canto yo</item>
+        <item>pope is a rockstar</item>
+        <item>rain</item>
+        <item>Achilles, come down</item>
+        <item>this side of paradise</item>
+        <item>oh Klahoma</item>
+        <item>karma</item>
+        <item>death of a bachelor</item>
+        <item>el gallo de Morón</item>
+        <item>mechteria</item>
+        <item>カワキヲアメク</item>
+        <item>i`d love</item>
+        <item>licht und schatten</item>
+        <item>the girl who fell from the sky</item>
+    </string-array>
+
+    <string-array name="asmr_subtitles">
+        <item>una canción tristemente representativa</item>
+        <item>la representación melódica del apoyo que quiero darte</item>
+        <item>una historia que se parece, pero en otaco</item>
+        <item>un bucle difícil</item>
+        <item>darling, you`re glowing</item>
+        <item>un feo sueño que alguna vez viví</item>
+        <item>algunas noches de delirios</item>
+        <item>la idea que iba y venía </item>
+        <item>perfecta para un baile cutre</item>
+        <item>la extraña belleza de lo complejo</item>
+        <item>una ruptura personal conmigo</item>
+        <item>las traiciones pseudo-subconscientes</item>
+        <item>un buen resumen</item>
+        <item>preciados y muy buenos recuerdos aún presentes</item>
+    </string-array>
+
+    <!--
+    <string-array name="asmr_titles">
+        <item>no canto yo</item>
+        <item>pope is a rockstar</item>
+        <item>rain</item>
+        <item>Achilles, come down</item>
+        <item>this side of paradise</item>
+        <item>oh Klahoma</item>
+        <item>karma</item>
+        <item>death of a bachelor</item>
+        <item>el gallo de Morón</item>
+        <item>mechteria</item>
+        <item>カワキヲアメク</item>
+        <item>i'd love</item>
+        <item>licht und schatten</item>
+        <item>the girl who fell from the sky</item>
+    </string-array>
+
+    <string-array name="asmr_subtitles">
+        <item>una canción tristemente representativa</item>
+        <item>la representación melódica del apoyo que quiero darte</item>
+        <item>una historia que se parece</item>
+        <item>un bucle difícil</item>
+        <item>darling, you're glowing</item>
+        <item>un feo sueño que alguna vez viví</item>
+        <item>algunas noches de delirios</item>
+        <item>la idea que iba y venía </item>
+        <item>perfecta para un baile cutre</item>
+        <item>la extraña belleza de lo complejo</item>
+        <item>una ruptura personal conmigo</item>
+        <item>las traiciones pseudo-subconscientes</item>
+        <item>un buen resumen</item>
+        <item>preciados y muy buenos recuerdos aún presentes</item>
+    </string-array>
+    -->
+</resources>
